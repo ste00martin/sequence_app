@@ -19,8 +19,11 @@
       <% else %>
         <div class="item">
       <% end %>
-      <img src="<%= @image_base_url + product['images'].first['main-view'] %>" alt="<%= img_title %>" >
+        <img src="<%= @image_base_url + product['images'].first['main-view'] %>" alt="">
+        <div class="carousel-caption">
+          <h3><%= img_title %></h3>
         </div>
+      </div>
     <% end %>
   </div>
 
